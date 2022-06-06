@@ -1,0 +1,21 @@
+{
+  "name": "hexadecimal2fagenerator",
+  "version": "1.0.0",
+  "description": "Avala AI coding assignement hexa",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Hexa",
+    "8",
+    "bit"
+  ],
+  "type": "module",
+  "author": "Bassel EL-BIZRI",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
