@@ -40,6 +40,7 @@ Array.prototype.random = function () {
      }
  }
 
-
-  //Print the result. In a real world situation, we can use Twilio API to send this code via SMS or email to the user 
+//Print the result. In a real world situation, we can use Twilio API to send this code via SMS or email to the user 
+//Also, if we want to improve this 2FA functionality we could add an expiration timer of 5 minutes before generating a new hexa code  (No bots on earth could guess it under that delay )   
  console.log(HexaGenerator());
+
