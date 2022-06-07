@@ -29,9 +29,10 @@ Array.prototype.random = function () {
          let randomNumChar = hexaNumArr.random();
          //In a case where we have 2FA mechanism, we always make it "BruteForce proof" by alternating between upperCase or lowerCase, the idea is to make it harder for the BOT to guess the generated code
          let finalAlphaChar = (isCaps === 0) ? randomAlphaChar.toUpperCase() : randomAlphaChar;
+         //Build our final hexa output , this will result a string length of 8 as 4 times 2 is equal to 8
          finalHexa = finalHexa + finalAlphaChar + randomNumChar;
      }
-     // Ideally, we can always verify if final hexadecimal string does not contains a HexaSpeak sentence
+     // Ideally, we verify if our final hexadecimal string does not contains a HexaSpeak sentence, repeat untill no hexaSpeak sentence is found
      if (hexaSpeakArr.includes(finalHexa)) {
          HexaGenerator();
      } else {
