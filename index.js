@@ -23,7 +23,9 @@ Array.prototype.random = function () {
      let finalHexa = "";
      for (var i = 0; i < 4; i++) {
          let isCaps = capsOrNoCaps();
+         // Pick a random element from our Alpha array
          let randomAlphaChar = hexaAlphaArr.random();
+         // Pick a random element from our Numeric array
          let randomNumChar = hexaNumArr.random();
          //In a case where we have 2FA mechanism, we always make it "BruteForce proof" by alternating between upperCase or lowerCase, the idea is to make it harder for the BOT to guess the generated code
          let finalAlphaChar = (isCaps === 0) ? randomAlphaChar.toUpperCase() : randomAlphaChar;
