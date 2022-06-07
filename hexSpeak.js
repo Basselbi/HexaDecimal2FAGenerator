@@ -1,3 +1,5 @@
+//A list of common Hexaspeak string
+//Credit :gabrielfalcao at : https://gist.github.com/gabrielfalcao/c942f6602401f0697c206e30f0aa4bad
 const hexaSpeakArr = ["00D1E5",
 "0111E",
 "0115",
